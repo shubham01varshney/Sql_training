@@ -1,0 +1,28 @@
+create database newbatch
+use newbatch
+create table student
+(
+stu_name varchar(100),
+stu_age int,
+stu_marks int
+);
+select *from student
+
+insert into student values('shubham',30,214,23)
+
+insert  student values('saahubham',301,24,50)
+
+select stu_name,stu_age from student
+
+select stu_age 'student_ID', stu_name 'student_name' from student
+
+select 'student registration no'=stu_name,'name'=stu_age from student
+
+ALTER TABLE student
+ADD marks int;
+
+select marks,(marks/4) as 'marks4' from student
+select *from student
+select *from student where marks>=50
+
+select *from student where stu_mark>=214 and stu_age>=30
