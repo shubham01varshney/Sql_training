@@ -1,0 +1,26 @@
+create database New_like
+use New_like
+create table 
+Customers(
+CustomerName varchar(100),
+city varchar(50),
+Country varchar(100)
+);
+
+select *from Customers
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('shubham', 'delhi', 'india');
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('bankey', 'mathura', 'india');
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('ram', 'sambhal', 'Nepal');
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('krishna', 'rajghat', 'srilanka');
+
+
+select *from Customers where CustomerName like 's%'
+
+select *from Customers where CustomerName like '%y'
+
